@@ -1,0 +1,517 @@
+<html>
+
+<head>
+    <title>Smestaj</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="psiStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+
+
+
+    <!-- Mapa -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+    <div class='container'>
+
+        <!-- 1/3 -->
+        <header>
+            <div class='row myRow'>
+                <div class='col-sm-4'>
+                    <img class='leftAlign' src='../slike/logo2.jpg' width="100" height="100">
+                </div>
+                <div class='col-sm-4'>
+                    <h2 class='smestiSeStyle'>Smesti.se</h2>
+                </div>
+                <div class='col-sm-4 myTextRight'>
+                    <a href="..\pocetna_stranica_gost.html">Odjavi se</a>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- 2/3 -->
+        <main>
+
+            <div class='row pozadina'>
+                <div class='col-sm-12 idOglasa'>
+                    <p>ID#00000001</p>
+                    &nbsp;<br> &nbsp;
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class='col-sm-9 naslovSmestaja '>
+                    <b>Aleksandar Apartments </b>
+                </div>
+                <div class='col-sm-3 pin '>
+                    <i class="fa fa-map-marker ">Valjevo</i>
+                </div>
+            </div>
+
+            <div class='row pozadina'>
+                <div class='col-sm-6 naslovOcena'>
+                    Prosecna Ocena:
+                </div>
+                <div class='col-sm-6 glavnaOcena'>
+                    <div class="star-ratings ">
+                        <div class="fill-ratings " style="width: 50%; ">
+                            <span>★★★</span>
+                        </div>
+                        <div class="empty-ratings ">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row pozadina'>
+                <div class='col-sm-6 naslovOcena'>
+                    Opsti utisak:
+                </div>
+                <div class='col-sm-6 glavnaOcena'>
+                    <div class="star-ratings ">
+                        <div class="fill-ratings " style="width: 50%; ">
+                            <span>★</span>
+                        </div>
+                        <div class="empty-ratings ">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pozadina ">
+
+
+                <div class="container ">
+                    <div class="mySlides ">
+                        <div class="numbertext ">1 / 6</div>
+                        <img src="../slike/soba1.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">2 / 6</div>
+                        <img src="../slike/soba2.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">3 / 6</div>
+                        <img src="../slike/soba3.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">4 / 6</div>
+                        <img src="../slike/soba4.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">5 / 6</div>
+                        <img src="../slike/soba5.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">6 / 6</div>
+                        <img src="../slike/soba6.jpg " style="width:100% ">
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext ">7 / 7</div>
+                        <img src="../slike/soba7.jpg " style="width:100% ">
+                    </div>
+
+                    <a class="prev " onclick="plusSlides(-1) ">❮</a>
+                    <a class="next " onclick="plusSlides(1) ">❯</a>
+
+                    <div class="caption-container ">
+                        <p id="caption "></p>
+                    </div>
+
+
+
+                    <div class="row ">
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba1.jpg " style="width:100% " onclick="currentSlide(1) " alt="The Woods ">
+                        </div>
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Cinque Terre ">
+                        </div>
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
+                        </div>
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
+                        </div>
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Nature and sunrise ">
+                        </div>
+                        <div class="column ">
+                            <img class="demo cursor " src="../slike/soba6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Snowy Mountains ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-12 '>
+                    &nbsp; <br> &nbsp;
+                </div>
+            </div>
+            <div class='row pozadina nasov'>
+                <div class='col-sm-12 '>
+                    <h1>Opis:</h1>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class=' row '>
+                    <div class='col-sm-12 '>
+                        <table class='table table table-striped tableInit '>
+                            <tr>
+                                <td>
+                                    Tip Smestaja:
+                                </td>
+                                <td>
+                                    Apartman/Ceo Apartman/Hotleska Soba/Vikendica
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Kapacitet:
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Povrsina:
+                                </td>
+                                <td>
+                                    65 m²
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Kuhinja:
+                                </td>
+                                <td>
+                                    Da/Ne
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Parking:
+                                </td>
+                                <td>
+                                    Da/Ne/Besplatan Parking
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Terasa:
+                                </td>
+                                <td>
+                                    Da/Ne
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Adresa:
+                                </td>
+                                <td>
+                                    Dr Pantica 107, 14000 Valjevo, Srbija
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2 ">
+                                    Apartment ALEKSANDAR Valjevo toplo dočekuje Booking.com goste od: 27. feb. 2019.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Opis:
+                                </td>
+                                <td>
+                                    Objekat Apartment ALEKSANDAR Valjevo se nalazi u Valjevu, u regionu Centralne Srbije i nudi popločano dvorište i pogled na grad. Ovaj klimatizovani smeštaj pruža gostima besplatan WiFi i privatni parking u okviru objekta. Divčibare su udaljene 36 km.
+                                    Apartman sadrži 1 spavaću sobu, opremljenu kuhinju sa frižiderom i mikrotalasnom pećnicom, flat-screen TV sa kablovskim kanalima, mašinu za pranje veša i 1 kupatilo sa bideom. Gosti apartmana mogu da koriste terasu.
+                                    Najbliži aerodrom je Aerodrom Nikola Tesla u Beogradu, udaljen 106 km od objekta Apartment ALEKSANDAR.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='row pozadina '>
+                <div class='col-sm-12 '>
+                    &nbsp; <br> &nbsp;
+                </div>
+            </div>
+
+
+
+            <div class='row pozadina '>
+
+                <div class='col-sm-6 '>
+                    <div id="mapid" class="mapKlasa"></div>
+                </div>
+
+
+
+
+                <div class='col-sm-6'>
+
+
+                    <div clas='row' style="background-color: pink; padding: 10px; ">
+                        <div class='col-sm-12 '>
+
+                            <span class=" heading ">Prosecna Ocena:</span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star "></span>
+                            <p>4.1 average based on 254 reviews.</p>
+                            <hr style="border:3px solid #f1f1f1 ">
+
+                            <div class="row ">
+                                <div class="side ">
+                                    <div>5 star</div>
+                                </div>
+                                <div class="middle ">
+                                    <div class="bar-container ">
+                                        <div class="bar-5 "></div>
+                                    </div>
+                                </div>
+                                <div class="side right ">
+                                    <div>150</div>
+                                </div>
+                                <div class="side ">
+                                    <div>4 star</div>
+                                </div>
+                                <div class="middle ">
+                                    <div class="bar-container ">
+                                        <div class="bar-4 "></div>
+                                    </div>
+                                </div>
+                                <div class="side right ">
+                                    <div>63</div>
+                                </div>
+                                <div class="side ">
+                                    <div>3 star</div>
+                                </div>
+                                <div class="middle ">
+                                    <div class="bar-container ">
+                                        <div class="bar-3 "></div>
+                                    </div>
+                                </div>
+                                <div class="side right ">
+                                    <div>15</div>
+                                </div>
+                                <div class="side ">
+                                    <div>2 star</div>
+                                </div>
+                                <div class="middle ">
+                                    <div class="bar-container ">
+                                        <div class="bar-2 "></div>
+                                    </div>
+                                </div>
+                                <div class="side right ">
+                                    <div>6</div>
+                                </div>
+                                <div class="side ">
+                                    <div>1 star</div>
+                                </div>
+                                <div class="middle ">
+                                    <div class="bar-container ">
+                                        <div class="bar-1 "></div>
+                                    </div>
+                                </div>
+                                <div class="side right ">
+                                    <div>20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row " style="height:25px; ">
+                    </div>
+                    <div class="row " style="height:25px; ">
+                    </div>
+
+
+
+                    <!-- <input type="button " class="btn btn-info " value="Input Button " onclick=" relocate_home() ">
+
+                    <script>
+                    function relocate_home()
+                    {
+                         location.href = "www.yoursite.com ";
+                    } 
+                    </script>
+                    OR Use this Code
+                    
+
+                    <a href="#link " class="btn btn-info " role="button ">Link Button</a> -->
+                    <div class="row ">
+                        <div class="col ">
+
+                            <!-- <button class="btn btn-success col-12 ">
+                                class="col-12 "
+                            </button> -->
+
+                            <div class="row ">
+                                <div class="col ">
+                                    <a href="./spisak_recenzija_korisnik.html " class="btn btn-success col-12 " role="button ">Recenzije(12)</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row " style="height:25px; ">
+                    </div>
+
+
+                    <div class="row ">
+                        <div class="col ">
+                            <a href="./rezervisi.html " class="btn btn-success col-12 " role="button ">Rezervisi</a>
+                        </div>
+                    </div>
+
+                    <div class="row " style="height:25px; ">
+                    </div>
+
+
+                    <!-- <div class="row ">
+                        <div class="col ">
+                            <a href="#link " class="btn btn-success col-12 " role="button ">Oglasavac</a>
+                        </div>
+                    </div> -->
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class='row pozadina'>
+                <div class='col-sm-12 '>
+                    &nbsp; <br> &nbsp;
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+
+        <!-- 3/3 -->
+        <footer>
+
+            <div class="row futer ">
+                <div class='col-sm-12'>
+                    Copyright &reg;
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- Kraj od Container -->
+    </div>
+
+
+
+
+    <!-- Za Mapu -->
+    <script>
+        var map = L.map('mapid').setView([44.272741, 19.890531], 20);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright ">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([44.272741, 19.890531]).addTo(map)
+            .bindPopup('Apartman Aleksandar.')
+            .openPopup();
+    </script>
+
+
+
+
+
+
+
+    <!-- Za Galeriju -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("demo ");
+            var captionText = document.getElementById("caption ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+</body>
+
+</html>

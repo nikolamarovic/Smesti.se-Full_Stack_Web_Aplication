@@ -1,0 +1,513 @@
+/* AN */
+
+
+/*Galerija slika*/
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(165, 44, 44, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/*  Kraj Galerija Slika*/
+
+
+/* Glavna Ocena */
+
+.star-ratings {
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 64px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.fill-ratings {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.empty-ratings {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
+
+
+/*Allows us to grab the width of the span elements */
+
+.span {
+    display: inline-block;
+}
+
+
+/*  Kraj Glavna Ocena */
+
+.mapKlasa {
+    height: 600px
+}
+
+.naslovSmestaja {
+    height: 75px;
+    background-color: red;
+    text-align: center;
+    font-size: 48;
+}
+
+.pin {
+    text-align: center;
+    height: 75px;
+    padding-top: 10px;
+    background-color: blue;
+    /* za sam pin */
+    font-size: 50px;
+    color: red
+}
+
+.naslovOcena {
+    background-color: blueviolet;
+    text-align: right;
+    font-size: 48;
+    padding-top: 10px;
+}
+
+.glavnaOcena {
+    background-color: blueviolet;
+    /* text-align: left;   problematicno? */
+}
+
+.pozadina {
+    background-color: blueviolet;
+}
+
+.futer {
+    background-color: red;
+    text-align: center;
+}
+
+.naslov {
+    text-align: center;
+}
+
+.idOglasa {
+    text-align: right;
+}
+
+
+/* User Rating */
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+
+/* Three column layout */
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+
+/* Place text to the right */
+
+.right {
+    text-align: right;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The bar container */
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+
+/* Individual bars */
+
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #4CAF50;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+    .side,
+    .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+
+/*      NM    */
+
+.myRow {
+    background-color: darkslateblue;
+    height: 100px;
+}
+
+.myRowSmall {
+    background-color: darkslateblue;
+    height: 30px;
+}
+
+.smestiSeStyle {
+    color: gold;
+    font-style: oblique;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.myRowGraySmall {
+    background-color: gray;
+    height: 30px;
+}
+
+.blackTextTitleCenter {
+    color: darkslategray;
+    font-size: 30px;
+    text-align: center;
+}
+
+.myText {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.myTextCenter {
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgAvatar {
+    border-radius: 50%;
+}
+
+.myTextLeft {
+    color: gold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.myTextRight {
+    color: gold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.blackTextCenter {
+    color: darkslategray;
+    font-size: 20px;
+    text-align: center;
+}
+
+.blackTextLeft {
+    color: darkslategray;
+    font-size: 20px;
+    text-align: left;
+}
+
+.blackTextRight {
+    color: darkslategray;
+    font-size: 20px;
+    text-align: right;
+}
+
+.tableText {
+    color: darkslategray;
+    position: relative;
+}
+
+.tableBorder {
+    border: 3px;
+    border-right: darkslategray;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+.myTitle {
+    color: gold;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.myLoginRegister {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.pictureCell {
+    width: 10%;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.classTableDesc {
+    text-align: left;
+    /*background-color: blanchedalmond;*/
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.leftPadding25 {
+    padding-left: 25px;
+}
+
+.rightPadding21 {
+    padding-right: 21px;
+}
+
+.rightPadding41 {
+    padding-right: 41px;
+}
+
+.textRed {
+    color: red;
+    font-weight: bold;
+}
+
+.tableInit {
+    border-color: green;
+    border-width: 5px;
+}
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: gold;
+}
+
+.rating {
+    display: inline-flex;
+    transform: rotateY(180deg);
+}
+
+.rating label {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    color: darkslateblue;
+    top: 0;
+    display: block;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    color: gold;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating input:checked {
+    color: gold;
+}
+
+.rating label:hover:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}

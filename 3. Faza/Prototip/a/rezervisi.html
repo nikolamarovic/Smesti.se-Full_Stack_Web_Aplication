@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Rezervisanje</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="psiStyle.css">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class='container'>
+
+
+
+        <header>
+
+            <div class='row myRow'>
+                <div class='col-sm-4'>
+                    <img class='leftAlign' src='../slike/logo2.jpg' width="100" height="100">
+                </div>
+                <div class='col-sm-4'>
+                    <h2 class='smestiSeStyle'>Smesti.se</h2>
+                </div>
+                <div class='col-sm-4 myTextRight'>
+                    <a href="../pocetna_stranica_gost.html">Odjavi se</a>
+                </div>
+
+            </div>
+        </header>
+
+
+
+
+        <main>
+            <div class='row pozadina'>
+                <div class='col-sm-12 naslov'>
+                    &nbsp;<br>
+                    <h1>Rezervisanje oglasa: ID#00000001</h1>
+                    &nbsp; <br>
+                </div>
+            </div>
+
+
+
+
+
+            <div class='row'>
+                <div class='offset-sm-3 col-sm-6 text-center'>
+                    <form method="POST" action="rezultat_pretrage.html">
+                        <table class='table'>
+
+                            <tr>
+                                <td>Datum od:</td>
+                                <td>
+                                    <input type='date'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Datum do:</td>
+                                <td>
+                                    <input type='date'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Broj osoba:</td>
+                                <td>
+                                    <input type="number">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Napomena:</td>
+                                <td>
+                                    <textarea id="" rows="10" cols="50">Ovde mozete dodati napomenu ili poruku za domacina.</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan='2' class='text-center'>
+                                    <a href="ishod_rezervacije.html" class='btn btn-success'>Rezervisi</a>
+                                    <!-- <button class='btn btn-success'>Rezervisi</button> -->
+                                </td>
+
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <br>
+                <hr>
+                <br>
+
+        </main>
+
+        <footer>
+            <div class='row futer'>
+                <div class='col-sm-12'>
+                    Copyright &reg;
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        </div>
+</body>
+
+</html>

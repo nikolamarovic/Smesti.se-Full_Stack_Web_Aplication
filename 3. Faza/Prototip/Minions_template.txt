@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Stranica</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "psiStyle.css">
+    </head>
+        <body>
+             <div class='container'>
+                <div class='row myRow'>
+                    <div class='col-sm-4'>
+                        <img class='leftAlign' src='slike/logo2.jpg' width="100" height="100">
+                    </div>
+                    <div class='col-sm-4'>
+                        <h2 class='smestiSeStyle'>Smesti.se</h2>
+                    </div>
+                    <div class='col-sm-4 myTextRight'>
+                        <a href="pocetna_stranica_gost.html">Odjavi se</a>
+                    </div>
+                </div>
+	     </div>
+		<footer class='textCenter'>
+                    <hr>
+                    Copyright Minions &reg;
+                </footer>
+            </div>
+        </body>
+</html>

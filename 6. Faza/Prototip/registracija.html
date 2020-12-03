@@ -1,0 +1,107 @@
+<!-- Nikola Marovic 17/0700 -->
+<html>
+<head>
+    <title>Header i footer gost</title>
+    <link rel="stylesheet" href="psiStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class='header'>
+        <div class='row myRow col-sm-12'>
+            <div class='col-sm-4 myTextLeft'>
+                <img class='leftAlign' src='slike/logo2.png' width="100" height="100">
+            </div>
+            <div class='col-sm-4 myTextCenter'>
+                <h2 class='smestiSeStyle'>Smesti.se</h2>
+            </div>
+            <div class='col-sm-4 myTextRight'> 
+                <a href="prijava.html">Uloguj se</a> |
+                <a href="registracija.html">Registruj se</a>
+            </div>
+        </div>
+    </div>
+    <div class='bodyContent'>
+        <div class = 'row '>
+            <div class = 'col-sm-12'>
+                <h2 class='blackTextTitleCenter'>Registrujte se:</h2>
+            </div>
+        </div>
+        <div class = 'row'>
+            <div class = 'offset-sm-4'>
+                <form method="POST" action="prijava.html">
+                    <table class='table'>
+                        <div class = 'text-center'>
+                            <tr>
+                                <td>Ime:</td>
+                                <td>
+                                    <input type='text' name='firstName'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prezime:</td>
+                                <td>
+                                    <input type='text' name='secondName'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Korisnicko ime:</td>
+                                <td>
+                                    <input type='text' name='username'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td>
+                                    <input type='email' placeholder='me@gmail.com' name='mail'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lozinka:</td>
+                                <td>
+                                    <input type='password' name='passReg1'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ponovite lozinku:</td>
+                                <td>
+                                    <input type='password' name='passReg2'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Datum rodjenja:</td>
+                                <td>
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Adresa:</td>
+                                <td>
+                                    <input type='text' name='address'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vrsta registracija:</td>
+                                <td>
+                                    <input type="radio" name='vrstaReg'>Oglasavac
+                                    <input type="radio" name='vrstaReg'>Korisnik
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan='2' class='text-center'>
+                                    <button class = 'btn btn-success offset-sm-3 col-sm-6'>Registruj se</button> 
+                                    </td>
+                            </tr>
+                        </div>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class='row footer'>
+        <div class='col-sm-12'>
+            COPYRIGHT © 2020 Minions | All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

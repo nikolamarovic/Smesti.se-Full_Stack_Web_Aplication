@@ -1,0 +1,617 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(49, 49, 56);
+    height: 100px;
+    margin: auto;
+}
+
+.bodyContent {
+    /*background-image: linear-gradient("#F09819","#EDDE5D");*/
+    background-image: url("slike/pozadina1.jpg");
+    margin: auto;
+    background-position: center;
+}
+
+.footer {
+    text-align: center;
+    margin: auto;
+    width: 101%;
+    color: yellow;
+    background-color: rgb(49, 49, 56);
+}
+
+.oglas {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.gallery {
+    margin: auto;
+}
+
+/*za galeriju slika na pocetnoj*/
+
+.rowImages {
+    float: left;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.active, .rowImages:hover {
+    opacity: 1;
+}
+
+.imgAvatarsAdmin {
+    width: 70%;
+    margin: auto;
+}
+
+.myRow {
+    background-color: rgb(48, 168, 184);
+    height: 100px;
+}
+
+.lateBlueBackground {
+    background-color: darkslateblue;
+}
+
+.myRowSmall {
+    background-color: darkslateblue;
+    height: 30px;
+}
+
+.rowGray40 {
+    background-color: lightgray;
+    height: 40px;
+}
+
+.rowGray30 {
+    background-color: lightgray;
+    height: 30px;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.smestiSeStyle {
+    color: gold;
+    font-style: oblique;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px gray;
+}
+
+.myRowGraySmall {
+    background-color: lightgray;
+    height: 30px;
+}
+
+.blackTextTitleCenter {
+    color: darkslategray;
+    font-size: 30px;
+    text-align: center;
+}
+
+.myText {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.myTextCenter {
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgAvatar {
+    border-radius: 50%;
+}
+
+.myTextLeft {
+    color: gold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.darkTextLight {
+    color: darkslategray;
+}
+
+.skyBackground {
+    background-color: rgb(48, 168, 184);
+}
+
+.myTextRight {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.blackTextCenter {
+    color: rgb(37, 40, 44);
+    font-size: 20px;
+    text-align: center;
+}
+
+.blackTextLeft {
+    color: rgb(37, 40, 44);
+    font-size: 20px;
+    text-align: left;
+}
+
+.blackTextRight {
+    color: rgb(37, 40, 44);
+    font-size: 20px;
+    text-align: right;
+}
+
+.valign {
+    vertical-align: middle;
+}
+
+.goldText {
+    color: gold;
+    font-weight: bold;
+}
+
+.darkText {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.textSize10 {
+    font-size: 10;
+}
+
+.textSize15 {
+    font-size: 15;
+}
+
+.textSize20 {
+    font-size: 20;
+}
+
+.textSize25 {
+    font-size: 25;
+}
+
+.textSize30 {
+    font-size: 30;
+}
+
+.textSize40 {
+    font-size: 40;
+}
+
+.tableText {
+    color: darkslategray;
+    position: relative;
+}
+
+.tableBorder {
+    border: 3px;
+    border-right: darkslategray;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+.myTitle {
+    color: gold;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.myLoginRegister {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.milkBackground {
+    background-color: rgb(245, 235, 219);
+}
+
+.grayBackground {
+    background-color: lightgray
+}
+
+.pictureCell {
+    width: 10%;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.classTableDesc {
+    text-align: left;
+    /*background-color: blanchedalmond;*/
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.leftPadding25 {
+    padding-left: 25px;
+}
+
+.rightPadding21 {
+    padding-right: 21px;
+}
+
+.rightPadding41 {
+    padding-right: 41px;
+}
+
+.textRed {
+    color: red;
+    font-weight: bold;
+}
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: gold;
+}
+
+.rating {
+    display: inline-flex;
+    transform: rotateY(180deg);
+}
+
+.rating label {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    color: darkslateblue;
+    top: 0;
+    display: block;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    color: gold;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating input:checked {
+    color: gold;
+}
+
+.rating label:hover:after, .rating input:checked~label:after {
+    opacity: 1;
+}
+
+/* COA CSS*/
+
+/*Galerija slika*/
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(165, 44, 44, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/*  Kraj Galerija Slika*/
+
+/* Glavna Ocena */
+
+.naslovOcena {
+    color: darkslategray;
+    font-weight: bold;
+    text-align: right;
+    font-size: 48;
+    padding-top: 40px;
+}
+
+.star-ratings {
+    unicode-bidi: bidi-override;
+    color: #ccc;
+    font-size: 64px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.fill-ratings {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.empty-ratings {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
+
+/*Allows us to grab the width of the span elements */
+
+.span {
+    display: inline-block;
+}
+
+/*  Kraj Glavna Ocena */
+
+.mapKlasa {
+    height: 600px
+}
+
+.naslovSmestaja {
+    height: 75px;
+    background-color: red;
+    text-align: center;
+    font-size: 48;
+}
+
+.height75 {
+    height: 75;
+}
+
+.pin {
+    text-align: center;
+    height: 75px;
+    padding-top: 10px;
+    background-color: blue;
+    /* za sam pin */
+    font-size: 50px;
+    color: red
+}
+
+.futer {
+    background-color: red;
+    text-align: center;
+}
+
+.naslov {
+    text-align: center;
+}
+
+.idOglasa {
+    text-align: right;
+}
+
+/* User Rating */
+
+.fa {
+    font-size: 25px;
+    color: lightskyblue
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #4CAF50;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}

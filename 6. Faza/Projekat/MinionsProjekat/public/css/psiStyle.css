@@ -1,0 +1,377 @@
+html,body{
+   overflow-x: hidden;
+   width:100%;
+   
+}
+.header{
+    background-color: rgb(49, 49, 56);
+    height: 100px;
+    margin: auto;
+}
+
+.bodyContent{
+    /*background-image: linear-gradient("#F09819","#EDDE5D");*/
+    background-image: url('../slike/pozadina1.jpg');
+    margin: auto;
+    background-position: center; 
+    min-height: 82%;
+}
+
+.footer{
+    text-align: center;
+    margin:auto;
+    width:101%;
+    color:yellow;
+    background-color: rgb(49, 49, 56);
+}
+
+
+/*div za oglas na pocetnim stranama*/
+.oglas{
+    width: 70%;
+    margin: auto;
+    text-align:left;
+}
+
+/*pretraga stranica*/
+.ui-helper-center {
+    text-align: right;
+}
+
+.tabela-pretraga{
+    margin: 0 auto;
+    width: 20%;
+}
+
+/*za galeriju slika na pocetnim*/
+.gallery{
+    margin:auto;   
+}
+
+.rowImages{
+    float: left;
+    width: 20%;   
+    opacity: 0.9;
+}
+
+.active,
+.rowImages:hover{
+    opacity:1;
+}
+
+
+/*pocetna oglasavac*/
+.pocetna_ogl{
+    width:80%;
+    margin: auto;
+}
+
+/*content za registraciju*/
+.registerDiv{
+    width:30%;
+    margin:auto;
+}
+
+/*content za postavljanje oglasa*/
+.adPlacingDiv{
+    width:60%;
+    margin:auto;
+}
+
+/*za logovanje i registraciju na header-u */
+.logReg{
+    color:gold;
+    font-weight: bold;
+    font-size:14px;
+    text-align:right;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+.logRegOglasavac{
+    color:gold;
+    font-weight: bold;
+    font-size:12.5px;
+    text-align:right;
+    font-family: 'Montserrat';
+    text-decoration: none; 
+}
+
+.logRegOglasavac:hover{
+    font-size:13px;
+    text-align:right;
+    text-decoration: none;
+}
+
+#logRegStyle a:link, a:hover,a:visited,a:active{
+    color:gold;
+    text-align:right;
+    text-decoration: none;
+}
+.logReg:hover{
+    font-size:15px;
+    text-align:right;
+    text-decoration: none;
+}
+
+.textLeft{
+    text-align:left;
+}
+
+.textCenter{
+    text-align:center;
+}
+
+.textRight{
+    text-align:right;
+}
+
+/*naslov na headerima*/
+#mainTitle{
+    color:gold;
+    font-style: oblique;
+    font-size:70px;
+    text-align: center;
+    text-shadow: 2px 2px gray;
+}
+
+#mainTitle a:link,a:hover,a:visited,a:active{
+    
+    text-decoration: none;
+}
+
+.recenzijeDiv{
+    width:75%;
+    margin:auto;
+}
+
+.ratingsSmestaj .fa{
+    font-size:18px;
+    color:goldenrod;
+    margin: auto;
+    text-align:center;
+}
+
+/*zvezdice za recenziju*/
+.ratings1 .fa{
+    font-size:18px;
+    color:goldenrod;
+    float:left;
+}
+.ratings2 .fa{
+    font-size:18px;
+    color:goldenrod;
+    float:left;
+}
+.ratings3 .fa{
+    font-size:18px;
+    color:goldenrod;
+    float:left;
+}
+.ratings4 .fa{
+    font-size:18px;
+    color:goldenrod;
+    float:left;
+}
+.ratings5 .fa{
+    font-size:18px;
+    color:goldenrod;
+    float:left;
+}
+
+/*opcije u okviru oglasa(pregledaj,izbrisi)*/
+#oglasOpcije{
+    font-family: 'Montserrat';
+    font-size:20px;
+    font-weight: bold;
+    text-align:right;
+    color:rgb(49, 49, 56);
+}
+
+/* admin */
+.zahteviDiv{
+    margin:auto;
+    width: 75%;
+}
+
+.tableText{
+    font-family: 'Montserrat';
+    font-size:15px;
+    color:whitesmoke;
+}
+
+.smestajNaslov{
+    font-family: 'Montserrat';
+    font-size:40px;
+    font-weight: bold;
+    color:rgb(49, 49, 56);
+}
+
+.pocetnaTextNaslov{
+  font-family: 'Montserrat';
+  font-size:20px;
+  font-weight:bold;
+  color:rgb(49, 49, 56);
+}
+
+.pocetnaTextOpis{
+  font-family: 'Montserrat';
+  font-size:17px;
+  color:rgb(49, 49, 56);  
+}
+
+#tabelaLinkovi{
+    color:whitesmoke;
+    font-size:15px;
+}
+
+#tabelaLinkovi a:link, a:hover, a:visited, a:active{
+    color:whitesmoke;
+    font-size:15px;
+    text-align: left;
+    text-decoration: none;
+}
+
+/*za odobravanje na stranici sa zahtevima*/
+#zahtevi{
+   color:black;
+   font-size: 20px; 
+}
+
+#zahtevi a:link, a:hover, a:visited, a:active{
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+}
+/*Stranica smestaj*/
+.informacijeSmestaj{
+    margin:auto;
+    width:75%;
+}
+/*glavni div za galeriju i prikaz slika*/
+.galerijaSmestajDiv{
+    margin: auto;
+    background-image: linear-gradient(rgb(49, 49, 56), #293229);
+}
+/* div unutar koga su slike */
+.galerijaSmestajSlike{
+    width:75%;
+    margin: auto;
+}
+
+.prikazSlikeSmestaj{
+    margin: auto;
+    text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides{
+    margin: auto;
+    display:none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor{
+    cursor: pointer;
+}
+
+/* broj slajda */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 12px 16px;
+    position: absolute;
+    top: 0;
+}
+
+/* 5 slika u galeriji*/
+.column {
+    float: left;
+    width: 20%;
+}
+/* za slike u galeriji*/
+.demo {
+    opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+/*  Kraj stranice smestaj*/
+
+
+.blackTextTitleCenter{
+    color:darkslategray;
+    font-size: 30px;
+    text-align: center;
+}
+
+.myTextCenter{
+    color:gold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.myTextLeft{
+    color:gold;
+    font-size:20px;
+    text-align:left;
+}
+
+.myTextRight{
+    color:gold;
+    font-size:20px;
+    font-weight: bold;
+    text-align:right;
+}
+
+.imgAvatar{
+    border-radius: 50%;
+}
+
+.blackTextCenter{
+    color:rgb(37, 40, 44);
+    font-size: 20px;
+    text-align: center;
+}
+
+.blackTextLeft{
+    color:rgb(37, 40, 44);
+    font-size:20px;
+    text-align:left;
+}
+
+.blackTextRight{
+    color:rgb(37, 40, 44);
+    font-size:20px;
+    text-align:right;
+}
+
+/* za notifikaciju u headeru */
+.badge {
+    position: relative;
+    top: -1px;
+    right: -2px;
+    padding: 3px 3px;
+    border-radius: 100;
+    background: red;
+    color: white;
+}
+
+#map {
+    width: 80%;
+    height: 300px;
+    padding: 0;
+    border:solid rgb(49, 49, 56);
+    margin: 0 auto;
+    
+}
+.address {
+    cursor: pointer;
+  }
+
+.address:hover {
+color: #AA0000;
+text-decoration: underline
+}
+

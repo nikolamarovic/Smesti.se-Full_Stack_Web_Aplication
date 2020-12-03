@@ -1,0 +1,149 @@
+<!-- Aleksandar Nikolic 17/0709 -->
+<html>
+    <head>
+        <title>Postavljanje oglasa</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="psiStyle.css">
+        <!-- BootStrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class='container'>
+            <header>
+                <div class='row myRow'>
+                    <div class='col-sm-4'>
+                        <img class='leftAlign' src='slike/logo2.png' width="100" height="100">
+                    </div>
+                    <div class='col-sm-4'>
+                        <h2 class='smestiSeStyle'>Smesti.se</h2>
+                    </div>
+                    <div class='col-sm-4 myTextRight'>
+                        <a href="pocetna_stranica_gost.html">Odjavi se</a>
+                    </div>
+
+                </div>
+            </header>
+            <main>
+                <div class='row pozadina'>
+                    <div class='col-sm-12 naslov'>
+                        &nbsp;<br>
+                        <h1>Postavljanje oglasa</h1>
+                        &nbsp; <br>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='offset-sm-3 col-sm-6 text-center'>
+                        <form method="POST" action="ishod_postavljanje.html">
+                            <table class='table'>
+                                <tr>
+                                    <td>Tip smestaja:</td>
+                                    <td>
+                                        <input list="tipsmestaja" name="tipsmestaja">
+                                        <datalist id="tipsmestaja">
+                                        <option value="Soba">
+                                        <option value="Apartman">
+                                        <option value="Hotelska soba">
+                                        <option value="Vikendica">
+                                        </datalist>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kapacitet:</td>
+                                    <td>
+                                        <input type='number'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Povrsina [m<sup>2</sup>]:</td>
+                                    <td>
+                                        <input type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kuhinja:</td>
+                                    <td>
+                                        <input type="radio" id="da" name="kuhinja" value="da">
+                                        <label for="da">Da</label>
+
+                                        <input type="radio" id="ne" name="kuhinja" value="ne">
+                                        <label for="ne">Ne</label>
+
+                                        <input type="radio" id="cajna" name="kuhinja" value="cajna">
+                                        <label for="cajna">Cajna</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Parking:</td>
+                                    <td>
+                                        <input type="radio" id="da" name="Parking" value="da">
+                                        <label for="da">Da</label>
+
+                                        <input type="radio" id="ne" name="Parking" value="ne">
+                                        <label for="ne">Ne</label>
+
+                                        <input type="radio" id="besplatan" name="Parking" value="besplatan">
+                                        <label for="besplatan">Besplatan Parking</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Terasa:</td>
+                                    <td>
+                                        <input type="radio" id="da" name="Terasa" value="da">
+                                        <label for="da">Da</label>
+
+                                        <input type="radio" id="ne" name="Terasa" value="ne">
+                                        <label for="ne">Ne</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Adresa:</td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Opis:</td>
+                                    <td>
+                                        <textarea id="" rows="10" cols="50" placeholder='Kompletan opis smestaja.' maxlength="400"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Koordinate:</td>
+                                    <td>
+                                        <input type="text" value="[°N / S°]">
+                                        <input type="text" value="[°W / E°]">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="avatar">Slike smestaja:</label>
+
+                                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" multiple="true">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan='2 ' class='text-center '>
+                                        <a href="ishod_postavljanje.html " class='btn btn-info '>Postavi oglas</a>
+                                        <!-- <button class='btn btn-success '>Rezervisi</button> -->
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+            </main>
+            <footer>
+                <div class='row textCenter'>
+                    <div class='col-sm-12 '>
+                        <hr>
+                        Copyright Minions &reg;
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
